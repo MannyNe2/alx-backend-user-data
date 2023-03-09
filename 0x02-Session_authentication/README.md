@@ -131,7 +131,7 @@ This project contains tasks for learning to authenticate a user through session 
       + Otherwise, return `user_id` from the `session` dictionary.
   + Update [api/v1/app.py](api/v1/app.py) to instantiate `auth` with `SessionExpAuth` if the environment variable `AUTH_TYPE` is equal to `session_exp_auth`.
 
-+ [ ] 10. **Sessions in database**
++ [X] 10. **Sessions in database**
   + Since the beginning, all Session IDs are stored in memory. It means, if your application stops, all Session IDs are lost.
   + For avoid that, you will create a new authentication system, based on Session ID stored in database (for us, it will be in a file, like `User`).
   + Create a new model `UserSession` in [models/user_session.py](models/user_session.py) that inherits from `Base`:
